@@ -1,0 +1,67 @@
+# SnapActivate User Manual
+
+This guide provides a comprehensive overview of the features available to each user role on the SnapActivate platform.
+
+---
+
+## 1. Promoter Guide
+
+As a promoter, your dashboard is your home base for finding and managing your activation gigs.
+
+### What is my dashboard for?
+Your dashboard shows your very next upcoming booking for quick access and a list of new 'Available Gigs' that you can apply for.
+
+### How do I find and apply for gigs?
+Go to the 'Available Gigs' page from the sidebar. You can browse all active campaigns that need promoters. Use the filters to find gigs by location or category. When you find one you like, click 'Apply Now'.
+
+### What is the 'Live Gig' page?
+When it's time for a confirmed booking, you'll use the 'Live Gig' page. This is your mission control during the event. You must use it to check in, report your stock levels, log sales, and upload photos of the event in real-time.
+
+### How do I submit feedback after a gig?
+After a gig is completed, go to the 'Submit Feedback' page. You'll be asked to fill out a form about your experience, customer interactions, sales you made, and any competitor activity you noticed. This feedback is very important for the brand.
+
+### Where can I see my confirmed gigs?
+The 'My Bookings' page lists all your confirmed and past gigs, helping you keep track of your schedule.
+
+---
+
+## 2. Brand/Client Guide
+
+As a brand manager or client, your dashboard is your command center for booking, tracking, and analyzing your campaigns.
+
+### How do I use my dashboard?
+Your dashboard provides a high-level view of your campaign performance. Key metrics like Campaign ROI (Return on Investment), Average Customer Lifetime Value, and Customer Acquisition Cost are displayed prominently. You can also see a live feed of your active and past campaigns.
+
+### How do I book a new campaign?
+Click the 'Book Campaign' button on your dashboard or navigate to the 'Book Campaign' page. A modal will appear where you can fill in all the details for your new campaign, such as the title, location, number of promoters, and any specific requirements. You can also ask Zola to help you with this.
+
+### What is Zola, my AI Assistant?
+Zola is your conversational AI assistant, designed to make managing your campaigns effortless. Click the sparkle icon on your dashboard to chat with Zola. You can ask Zola to:
+- **Get a Live Dashboard:** Ask "What's happening now?" or "Show me my live campaigns" to get a real-time status of all active campaigns, including promoter check-ins.
+- **Set Up a New Campaign:** Simply tell Zola, "I want to book a new campaign," and she will guide you through the process step-by-step.
+- **Get a Performance Summary:** Ask "How did the Summer Soda Fest perform?" to get a quick, AI-generated summary of key metrics for any of your campaigns.
+- **Report an Issue:** If you encounter a problem, just tell Zola. For example, "I need to report an issue with a promoter," and she will help you log a support ticket instantly.
+
+### What happens after I book a campaign?
+The status of your campaign depends on your payment plan. If you are on the Standard plan, the campaign will be 'Pending Payment'. If you are on the Elite plan, it will be 'Pending PO'. Once the necessary steps are completed and approved by an admin, the campaign will become active.
+
+### Where can I find reports for my campaigns?
+On your dashboard, each completed campaign card will have a 'View Report' button. You can also ask Zola to generate a performance summary for any campaign by name.
+
+---
+
+## 3. Admin Guide
+
+As an admin, you have a complete overview of the platform, with the ability to manage all users, campaigns, and system settings.
+
+### How do I use the main dashboard?
+The main dashboard gives you a real-time overview of all platform activity. You can see stats like active campaigns today, promoters who have checked in, pending campaigns, and more. This is your command center for daily operations.
+
+### How do I manage campaigns?
+Navigate to the 'Campaigns' tab. Here you will see a list of all campaigns. You can see their status (e.g., Active, Pending Payment). For any campaign, you can click the three-dots menu to generate a detailed AI-powered performance report or export all campaign data to a CSV file for analysis.
+
+### How do I manage pricing packages?
+The 'Packages' tab shows the different campaign tiers you offer (Bronze, Silver, Gold, etc.). You can create, edit, and delete packages to manage the pricing and features available to brands.
+
+### How do I approve new promoters?
+Go to the 'Promoters' tab. This shows a list of all promoters who have signed up and are awaiting approval. You can review their details and use the checkmark button to approve them or the 'X' button to reject them. Approving a promoter allows them to start applying for gigs.
