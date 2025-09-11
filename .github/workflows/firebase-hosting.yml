@@ -16,28 +16,4 @@ jobs:
           pwd
           ls -R
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Install dependencies
-        working-directory: ./lma--app-new
-        run: npm install --legacy-peer-deps
-
-      - name: Build the app
-        working-directory: ./lma--app-new
-        run: npm run build
-
-      - name: Export static output (next export)
-        working-directory: ./lma--app-new
-        run: npm run export || echo "No export script found; skipping"
-
-      - name: Deploy to Firebase Hosting
-        uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
-          projectId: snapactivate
-
-
+      
