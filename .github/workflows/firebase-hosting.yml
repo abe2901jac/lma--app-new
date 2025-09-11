@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: lma--app-new   # important: this is where package.json lives
+        working-directory: lma--app-new/lma--app-new   # important: this is where package.json lives
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
