@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./lma--app-new   # 👈 real app folder
+        working-directory: ./lma--app-new   # ✅ just one level
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
