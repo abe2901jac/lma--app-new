@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./lma--app-new/lma--app-new/SnapActivate
+        working-directory: ./SnapActivate
 
     steps:
       - name: Checkout code
