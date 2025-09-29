@@ -1,47 +1,35 @@
-name: Build & Deploy to Firebase Hosting
+name: Debug Repo Layout (temporary)
 
 on:
+  workflow_dispatch:   # allows manual run from Actions page
   push:
-    branches: [ main ]
+    branches: [ main ] # optional: will also run on pushes
 
 jobs:
-  build_and_deploy:
+  debug:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./lma--app-new/SnapActivate   
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-      - name: Show package.json
+      - name: Show root working directory and list files
         run: |
-          echo ">>> Working directory now:"
+          echo ">>> pwd (root):"
           pwd
-          echo ">>> Listing:"
+          echo
+          echo ">>> ls -la (root):"
           ls -la
-          echo ">>> package.json contents:"
-          cat package.json
+          echo
+          echo ">>> recursive listing (root):"
+          ls -R
 
-      - name: Install dependencies
-        run: npm install --legacy-peer-deps
+      - name: Show full path of all package.json files
+        run: |
+          echo ">>> find package.json files (up to 5 levels):"
+          find . -maxdepth 5 -name 'package.json' -print -exec ls -l {} \; || true
 
-      - name: Build the app
-        run: npm run build
+      - name: Show sizes of top folders
+        run: |
+          echo ">>> top-level folders and counts:"
+          for d in *; do [ -d "$d" ] && echo "DIR: $d" && ls -la "$d" | head -n 20; done
 
-      - name: Export static output (next export)
-        run: npm run export || echo "No export script found; skipping"
-
-      - name: Deploy to Firebase Hosting
-        uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
-          projectId: snapactivate
-
-
-      
